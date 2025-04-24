@@ -20,7 +20,7 @@ const Login = () => {
 
       router.push('/');
 
-      axios.post('http://localhost:5000/user/authenticate', values)
+      axios.post('http://localhost:5100/user/authenticate', values)
         .then((result) => {
           console.log(result.data);
           toast.success('Login Successful');
