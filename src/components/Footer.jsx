@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="col-span-full lg:col-span-2">
         {/* logo - start */}
         <div className="mb-4 lg:-mt-2">
-          <Link
+          <a
             href="/"
             className="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
             aria-label="logo"
@@ -26,7 +26,7 @@ const Footer = () => {
               <path d="M96 0V47L48 94H0V47L48 0H96Z" />
             </svg>
             CCMS
-          </Link>
+          </a>
         </div>
         {/* logo - end */}
         
@@ -102,15 +102,15 @@ const Footer = () => {
       {/* nav - start */}
       <div>
         <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
-          Products
+          Quick Menu
         </div>
         <nav className="flex flex-col gap-4">
           <div>
             <a
-              href="#"
+              href="/"
               className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
-              Overview
+              Home
             </a>
           </div>
           <div>
@@ -118,32 +118,41 @@ const Footer = () => {
               href="#"
               className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
-              Solutions
+              Dashboard
             </a>
           </div>
           <div>
             <a
-              href="#"
+              href="/login"
               className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
-              Pricing
+              Login
             </a>
           </div>
           <div>
             <a
-              href="#"
+              href="/signup"
               className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
-              Customers
+              Register
             </a>
           </div>
+          <div>
+            <a
+              href="/signup"
+              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+            >
+              About Us
+            </a>
+          </div>
+
         </nav>
       </div>
       {/* nav - end */}
       {/* nav - start */}
       <div>
         <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
-          Company
+          Services
         </div>
         <nav className="flex flex-col gap-4">
           <div>
@@ -151,7 +160,7 @@ const Footer = () => {
               href="#"
               className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
-              About
+              Clubs
             </a>
           </div>
           <div>
@@ -159,7 +168,7 @@ const Footer = () => {
               href="#"
               className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
-              Investor Relations
+              Events
             </a>
           </div>
           <div>
@@ -167,7 +176,7 @@ const Footer = () => {
               href="#"
               className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
-              Jobs
+              News
             </a>
           </div>
           <div>
@@ -175,7 +184,41 @@ const Footer = () => {
               href="#"
               className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
-              Press
+              Gallery
+            </a>
+          </div>
+          
+        </nav>
+      </div>
+      {/* nav - end */}
+      {/* nav - start */}
+      <div>
+        <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+          Legal 
+        </div>
+        <nav className="flex flex-col gap-4">
+          <div>
+            <a
+              href="#"
+              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+            >
+              Term & Conditions
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+            >
+              Privacy Policy
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+            >
+              FAQs
             </a>
           </div>
           <div>
@@ -192,72 +235,21 @@ const Footer = () => {
       {/* nav - start */}
       <div>
         <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
-          Support
+          Information
         </div>
         <nav className="flex flex-col gap-4">
+          
+          
           <div>
             <a
               href="#"
               className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
-              Contact
-            </a>
-          </div>
-          <div>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-            >
-              Documentation
-            </a>
-          </div>
-          <div>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-            >
-              Chat
-            </a>
-          </div>
-          <div>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-            >
-              FAQ
-            </a>
-          </div>
-        </nav>
-      </div>
-      {/* nav - end */}
-      {/* nav - start */}
-      <div>
-        <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
-          Legal
-        </div>
-        <nav className="flex flex-col gap-4">
-          <div>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-            >
-              Terms of Service
-            </a>
-          </div>
-          <div>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-            >
-              Privacy Policy
-            </a>
-          </div>
-          <div>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-            >
-              Cookie settings
+              Naipalapur - Sitapur,
+              <br />
+              261001
+              <br />
+              Uttar Pradesh, India
             </a>
           </div>
         </nav>
@@ -265,7 +257,7 @@ const Footer = () => {
       {/* nav - end */}
     </div>
     <div className="border-t py-8 text-center text-sm text-gray-400">
-      © 2021 - Present Flowrift. All rights reserved.
+      © 2025 - Present Prateek. All rights reserved.
     </div>
   </footer>
 </div>
