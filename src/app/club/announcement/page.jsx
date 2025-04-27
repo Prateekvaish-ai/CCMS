@@ -3,7 +3,6 @@ import axios from 'axios';
 import { useFormik } from 'formik';
 import { jwtDecode } from 'jwt-decode';
 import { useParams } from 'next/navigation';
-
 import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 
@@ -147,7 +146,7 @@ const Announcement = () => {
         </label>
         <textarea
           id="description"
-            name='description'
+            name="description"
             onChange={announcementForm.handleChange}
             value={announcementForm.values.description}
           rows={4}
